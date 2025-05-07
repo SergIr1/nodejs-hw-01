@@ -6,7 +6,8 @@ export const getAllContacts = async () => {
 
 // =============================== варіант 1 ===============================
 
-console.log(await getAllContacts());
+// console.log(await getAllContacts());
+console.log(Array.isArray(await getAllContacts()));
 
 // =============================== /варіант 1 ===============================
 
