@@ -4,7 +4,7 @@ import { readContacts } from '../utils/readContacts.js';
 export const removeLastContact = async () => {
   const lastContact = await readContacts();
 
-  if (lastContact === 0) {
+  if (lastContact.length === 0) {
     console.log(`Upps, we dont have contacts`);
     return;
   }

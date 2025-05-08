@@ -13,7 +13,10 @@ const generateContacts = async (number) => {
 
   const updateContacts = [...contacts, ...newContacts];
 
-  writeContacts(updateContacts);
+  // ============== перевіряю, чи функція повертає Promise, Якщо Promise { <pending> } , значить, функція асинхронна і потрібно await ==============
+
+  // console.log(writeContacts(updateContacts));
+  await writeContacts(updateContacts);
 };
 
 generateContacts(5);
